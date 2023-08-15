@@ -7,63 +7,62 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 
-public class gameManage : MonoBehaviour
-{
+namespace Gameplay{
+    [Serializable]
     public enum GameState
     {
+        Character,
+        Load,
         Game,
         Ask,
-        GameWin,
-        GameOver
+        Finish
     }
-
-    [SerializeField] private GameObject
-        vt_GamePanel,
-        vt_AskPanel,
-        vt_GameWinPanel,
-        vt_GameOverPanel;
-
-    private GameState vt_GameState;
-    public void SetGameState(GameState state)
-    {
-        vt_GameState = state;
-        vt_GamePanel.SetActive(vt_GameState == GameState.Game);
-        vt_AskPanel.SetActive(vt_GameState == GameState.Ask);
-        vt_GameWinPanel.SetActive(vt_GameState == GameState.GameWin);
-        vt_GameOverPanel.SetActive(vt_GameState == GameState.GameOver);
-    }
-    // Start is called before the first frame update
-    void Start()
+    public class gameManage : MonoBehaviour
     {
         
-    }
 
-    void Awake()
-    {
-        SetGameState(GameState.Home);
-    }
+        [SerializeField] private GameObject
+            vt_CharPanel,
+            vt_LoadPanel,
+            vt_GamePanel,
+            vt_AskPanel,
+            vt_FinishPanel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        private GameState vt_GameState;
+        public void SetGameState(GameState state)
+        {
+            vt_GameState = state;
+            vt_CharPanel.SetActive(vt_GameState == GameState.Character);
+            vt_LoadPanel.SetActive(vt_GameState == GameState.Load);
+            vt_GamePanel.SetActive(vt_GameState == GameState.Game);
+            vt_AskPanel.SetActive(vt_GameState == GameState.Ask);
+            vt_FinishPanel.SetActive(vt_GameState == GameState.Finish);
+        }
+        void Awake()
+        {
+            SetGameState(GameState.Character);
+        }
 
-    // State-change function
-    public void Game_State()
-    {
-        SetGameState(GameState.Game);
-    }
-    public void Ask_State()
-    {
-        SetGameState(GameState.Ask);
-    }
-    public void GameWin_State()
-    {
-        SetGameState(GameState.GameWin);
-    }
-    public void GameOver_State()
-    {
-        SetGameState(GameState.GameOver);
+        // State-change function
+        public void Character_State()
+        {
+            SetGameState(GameState.Character);
+        }
+        public void Load_State()
+        {
+            SetGameState(GameState.Load);
+        }
+        public void Game_State()
+        {
+            SetGameState(GameState.Game);
+        }
+        public void Ask_State()
+        {
+            SetGameState(GameState.Ask);
+        }
+        public void Finish_State()
+        {
+            SetGameState(GameState.Finish);
+        }
     }
 }
