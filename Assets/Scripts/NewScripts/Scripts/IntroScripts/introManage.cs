@@ -14,6 +14,7 @@ namespace intro
     {
         Home,
         Option,
+        Help,
         Credit,
         Learn,
         Test,
@@ -24,6 +25,7 @@ namespace intro
         [SerializeField] private GameObject
             vt_HomePanel,
             vt_OptionPanel,
+            vt_HelpPanel,
             vt_CreditPanel,
             vt_LearnPanel,
             vt_TestPanel;
@@ -34,6 +36,7 @@ namespace intro
             vt_GameState = state;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
             vt_OptionPanel.SetActive(vt_GameState == GameState.Option);
+            vt_HelpPanel.SetActive(vt_GameState == GameState.Help);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_LearnPanel.SetActive(vt_GameState == GameState.Learn);
             vt_TestPanel.SetActive(vt_GameState == GameState.Test);
@@ -52,6 +55,10 @@ namespace intro
         public void Option_State()
         {
             SetGameState(GameState.Option);
+        }
+        public void Help_State()
+        {
+            SetGameState(GameState.Help);
         }
         public void Credit_State()
         {
