@@ -11,6 +11,7 @@ namespace Gameplay{
     [Serializable]
     public enum GameState
     {
+        Difficult,
         Character,
         Load,
         Game,
@@ -22,6 +23,7 @@ namespace Gameplay{
         
 
         [SerializeField] private GameObject
+            vt_DifficultyPanel,
             vt_CharPanel,
             vt_LoadPanel,
             vt_GamePanel,
@@ -32,6 +34,7 @@ namespace Gameplay{
         public void SetGameState(GameState state)
         {
             vt_GameState = state;
+            vt_DifficultyPanel.SetActive(vt_GameState == GameState.Difficult);
             vt_CharPanel.SetActive(vt_GameState == GameState.Character);
             vt_LoadPanel.SetActive(vt_GameState == GameState.Load);
             vt_GamePanel.SetActive(vt_GameState == GameState.Game);
@@ -40,16 +43,21 @@ namespace Gameplay{
         }
         void Awake()
         {
-            SetGameState(GameState.Character);
+            SetGameState(GameState.Difficult);
         }
 
         // State-change function
+        public void Difficulty_State()
+        {
+            SetGameState(GameState.Difficult);
+        }
         public void Character_State()
         {
             SetGameState(GameState.Character);
         }
         public void Load_State()
         {
+            Invoke("Game_State", 5.0f);
             SetGameState(GameState.Load);
         }
         public void Game_State()

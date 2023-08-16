@@ -3,9 +3,9 @@
 // how this game works, and switch between game states
 
 using UnityEngine;
-using TMPro;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace intro
 {
@@ -13,7 +13,6 @@ namespace intro
     public enum GameState
     {
         Home,
-        Difficult,
         Option,
         Credit,
         Learn,
@@ -24,7 +23,6 @@ namespace intro
 
         [SerializeField] private GameObject
             vt_HomePanel,
-            vt_DifficultyPanel,
             vt_OptionPanel,
             vt_CreditPanel,
             vt_LearnPanel,
@@ -35,7 +33,6 @@ namespace intro
         {
             vt_GameState = state;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
-            vt_DifficultyPanel.SetActive(vt_GameState == GameState.Difficult);
             vt_OptionPanel.SetActive(vt_GameState == GameState.Option);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_LearnPanel.SetActive(vt_GameState == GameState.Learn);
@@ -52,10 +49,6 @@ namespace intro
         {
             SetGameState(GameState.Home);
         }
-        public void Difficulty_State()
-        {
-            SetGameState(GameState.Difficult);
-        }
         public void Option_State()
         {
             SetGameState(GameState.Option);
@@ -71,6 +64,10 @@ namespace intro
         public void Test_State()
         {
             SetGameState(GameState.Test);
+        }
+        public void PlayGame()
+        {
+            SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
         }
     }
 }
