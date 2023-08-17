@@ -14,6 +14,8 @@ namespace intro
     public enum GameState
     {
         Home,
+        Option,
+        Help,
         Credit,
         Learn,
         Quiz,
@@ -26,6 +28,8 @@ namespace intro
 
         [SerializeField] private GameObject
             vt_HomePanel,
+            vt_OptionPanel,
+            vt_HelpPanel,
             vt_CreditPanel,
             vt_LearnPanel,
             vt_QuizPanel,
@@ -39,6 +43,8 @@ namespace intro
         {
             vt_GameState = state;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
+            vt_OptionPanel.SetActive(vt_GameState == GameState.Option);
+            vt_HelpPanel.SetActive(vt_GameState == GameState.Help);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_LearnPanel.SetActive(vt_GameState == GameState.Learn);
             vt_QuizPanel.SetActive(vt_GameState == GameState.Quiz);
@@ -66,6 +72,14 @@ namespace intro
         public void Home_State()
         {
             SetGameState(GameState.Home);
+        }
+        public void Option_State()
+        {
+            SetGameState(GameState.Option);
+        }
+        public void Help_State()
+        {
+            SetGameState(GameState.Help);
         }
         public void Credit_State()
         {

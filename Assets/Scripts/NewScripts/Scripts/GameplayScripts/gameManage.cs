@@ -15,6 +15,7 @@ namespace Gameplay{
         Character,
         Load,
         Game,
+        Pause,
         Ask,
         Finish
     }
@@ -27,6 +28,7 @@ namespace Gameplay{
             vt_CharPanel,
             vt_LoadPanel,
             vt_GamePanel,
+            vt_PausePanel,
             vt_AskPanel,
             vt_FinishPanel;
 
@@ -38,6 +40,7 @@ namespace Gameplay{
             vt_CharPanel.SetActive(vt_GameState == GameState.Character);
             vt_LoadPanel.SetActive(vt_GameState == GameState.Load);
             vt_GamePanel.SetActive(vt_GameState == GameState.Game);
+            vt_PausePanel.SetActive(vt_GameState == GameState.Pause);
             vt_AskPanel.SetActive(vt_GameState == GameState.Ask);
             vt_FinishPanel.SetActive(vt_GameState == GameState.Finish);
         }
@@ -63,6 +66,10 @@ namespace Gameplay{
         public void Game_State()
         {
             SetGameState(GameState.Game);
+        }
+        public void Pause_State()
+        {
+            SetGameState(GameState.Pause);
         }
         public void Ask_State()
         {
