@@ -29,6 +29,10 @@ namespace intro
         [SerializeField] private Image m_Explain;
         [SerializeField] private TextMeshProUGUI m_TxtExplain;
 
+        [SerializeField] private AudioSource src;
+        [SerializeField] private AudioClip WA_ans;
+        [SerializeField] private AudioClip AC_ans;
+
 
         [SerializeField] public QuesQuiz[] m_QuestionData;
 
@@ -68,8 +72,13 @@ namespace intro
             {
                 flag = true;
                 Debug.Log("Cau tra loi chinh xac");
+                src.PlayOneShot(AC_ans);
             }
-            else Debug.Log("Ngouuu");
+            else 
+            {
+                Debug.Log("Ngouuu");
+                src.PlayOneShot(WA_ans);
+            }
             // display correct ans
             switch (ans)
             {
@@ -108,6 +117,8 @@ namespace intro
         {
             intro.SetGameState(GameState.Explain);
             InitQuestion(randomIndex);
+            //src.Stop();
+
         }
 
 
@@ -118,6 +129,7 @@ namespace intro
             InitQuestion(randomIndex);
             m_QuestionIndex = randomIndex;
             intro.SetGameState(GameState.Quiz);
+            // src.Stop();
             
         }
 
