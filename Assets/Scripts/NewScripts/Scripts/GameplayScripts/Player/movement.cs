@@ -2,47 +2,53 @@
 // MOVEMENT OF PLAYER
 
 using UnityEngine;
+using System.IO;
+using System;
 
 public class movement : MonoBehaviour
 {
-    public float Speed = 10;
-    public float gravity = 10;
+    [SerializeField] float Speed = 6;
+    [SerializeField] float Accel = 2;
+    [SerializeField] float gravity = 2;
 
     private Rigidbody2D rb;
-    private Animator animator;
+    private Animator anim;
 
-    public bool grounded = false;
-    public float jumpForce = 10;
+    [SerializeField] bool grounded = false;
+    [SerializeField] float jumpForce = 2;
     // public float groundCheckDistance;
     // private float bufferCheckDistance = 0.1f;
 
-    void Start()
+    void Awake()
     {
-        // Difference character ability
+        // Different characters with different characteristics
         if (gameObject.name == "Jumper")
         {
             // Jump higher
-            Speed = 10;
-            gravity = 10;
-            jumpForce = 10;
+            Speed = 6;
+            Accel = 2;
+            gravity = 7;
+            jumpForce = 6;
         }
         else if (gameObject.name == "Runner")
         {
             // Run faster
             Speed = 10;
-            gravity = 10;
-            jumpForce = 10;
+            Accel = 5;
+            gravity = 3;
+            jumpForce = 3;
         }
         else if (gameObject.name == "Flyer")
         {
             // Lower gravity
-            Speed = 10;
-            gravity = 10;
-            jumpForce = 10;
+            Speed = 4;
+            Accel = 2;
+            gravity = 1;
+            jumpForce = 2;
         }
 
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -51,10 +57,22 @@ public class movement : MonoBehaviour
 
         // Horizontal movement
         float horizontalInput = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("Speed", Math.Abs(horizontalInput));
         if (horizontalInput != 0)
         {
-            rb.AddForce(new Vector2(horizontalInput * Speed, 0f));
+            if (rb.velocity.x > -Speed && rb.velocity.x < Speed)
+            {
+                rb.AddForce(new Vector2(horizontalInput * Accel, 0f));
+            }
+            else 
+            {
+                rb.velocity = new Vector2(Speed * horizontalInput, rb.velocity.y);
+            }
             gameObject.transform.localScale = new Vector3(horizontalInput,1,1);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
 
@@ -66,6 +84,7 @@ public class movement : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
+        anim.SetBool("IsJumping", !grounded);
 
         // groundCheckDistance = (GetComponent<CapsuleCollider2D>().size.y/2) + bufferCheckDistance;
         // RaycastHit hit;
@@ -82,10 +101,16 @@ public class movement : MonoBehaviour
     // Check collision
     private void OnCollisionEnter2D(Collision2D collision) 
     {
-        grounded = true;
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
     }
     private void OnCollisionExit2D(Collision2D collision) 
     {
-        grounded = false;
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = false;
+        }
     }
 }
