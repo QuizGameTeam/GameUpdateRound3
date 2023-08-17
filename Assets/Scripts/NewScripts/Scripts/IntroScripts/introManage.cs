@@ -6,6 +6,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Random;
 
 namespace intro
 {
@@ -13,45 +14,58 @@ namespace intro
     public enum GameState
     {
         Home,
-        Option,
         Credit,
         Learn,
-        Test,
+        Quiz,
+        Explain,
+        Exit,
     }
     public class introManage : MonoBehaviour
     {
+        public QuizGameR3 quiz;
 
         [SerializeField] private GameObject
             vt_HomePanel,
-            vt_OptionPanel,
             vt_CreditPanel,
             vt_LearnPanel,
-            vt_TestPanel;
+            vt_QuizPanel,
+            vt_ExplainPanel;
+
+        [SerializeField] private AudioSource src;
+        [SerializeField] private AudioClip AudioIntro;
 
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
             vt_GameState = state;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
-            vt_OptionPanel.SetActive(vt_GameState == GameState.Option);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_LearnPanel.SetActive(vt_GameState == GameState.Learn);
-            vt_TestPanel.SetActive(vt_GameState == GameState.Test);
+            vt_QuizPanel.SetActive(vt_GameState == GameState.Quiz);
+            vt_ExplainPanel.SetActive(vt_GameState == GameState.Explain);
+
         }
         // Start is called before the first frame update
-        void Awake()
+        void Start()
         {
+            src.clip = AudioIntro;
+            src.loop = true;
+            src.Play();
+            
             SetGameState(GameState.Home);
         }
 
-        // State-change function
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ExitGame();
+            }
+        }
+
         public void Home_State()
         {
             SetGameState(GameState.Home);
-        }
-        public void Option_State()
-        {
-            SetGameState(GameState.Option);
         }
         public void Credit_State()
         {
@@ -61,9 +75,17 @@ namespace intro
         {
             SetGameState(GameState.Learn);
         }
-        public void Test_State()
+        public void Quiz_State()
         {
-            SetGameState(GameState.Test);
+            SetGameState(GameState.Quiz);
+        }
+        public void Explain_State()
+        {
+            SetGameState(GameState.Explain);
+        }
+        public void ExitGame() 
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
         }
         public void PlayGame()
         {

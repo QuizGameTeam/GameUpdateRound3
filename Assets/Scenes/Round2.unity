@@ -18211,11 +18211,11 @@ MonoBehaviour:
   ImgAnsB: {fileID: 1171565106}
   ImgAnsC: {fileID: 749282865}
   ImgAnsD: {fileID: 694814651}
-  Audio: {fileID: 2037701528}
-  CorectAns: {fileID: 8300000, guid: 1ed7928bdaf164940bca31ab16986b46, type: 3}
-  WrongAns: {fileID: 8300000, guid: 377fc7a3b0349554a94347e1000ff23b, type: 3}
-  ThemeAudio: {fileID: 8300000, guid: 5fc7203e69a73ac4ebbefcdf170d57cf, type: 3}
-  PlayerAudio: {fileID: 8300000, guid: 02fb96197fcdb8a4b842c067a206537c, type: 3}
+  Audio: {fileID: 0}
+  CorectAns: {fileID: 0}
+  WrongAns: {fileID: 0}
+  ThemeAudio: {fileID: 0}
+  PlayerAudio: {fileID: 0}
   vt_HomePanel: {fileID: 649760311}
   vt_GamePanel: {fileID: 1154512904}
   vt_GamoverPanel: {fileID: 1801799102}
@@ -18273,9 +18273,9 @@ MonoBehaviour:
   m_ImgAnswerB: {fileID: 66479453}
   m_ImgAnswerC: {fileID: 1718930891}
   m_ImgAnswerD: {fileID: 1541484233}
-  m_AudioSource: {fileID: 2037701528}
-  m_SfxWrongAnswer: {fileID: 8300000, guid: 7175d1706b8e9864cb801dfba9ecf974, type: 3}
-  m_SfxCorrectAnswer: {fileID: 8300000, guid: 1ed7928bdaf164940bca31ab16986b46, type: 3}
+  m_AudioSource: {fileID: 0}
+  m_SfxWrongAnswer: {fileID: 0}
+  m_SfxCorrectAnswer: {fileID: 0}
   m_QuestionData:
   - {fileID: 11400000, guid: 4a2bfb0b0f0c01e4a89a0953ebf23144, type: 2}
   - {fileID: 11400000, guid: c938c538cb94fef4299a3493b22ec1a7, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bdc20d91509f84fbccf4bf34d5638c, type: 3}
+  m_Name: Ques 1
+  m_EditorClassIdentifier: 
+  question: "T\u1EA7ng n\xE0o sau \u0111\xE2y l\xE0 t\u1EA7ng th\u1EE9 2 c\u1EE7a
+    m\xF4 h\xECnh OSI? "
+  answerA: Physical
+  answerB: Presentation
+  answerC: Internet
+  answerD: Datalink
+  explain: "M\xF4 h\xECnh OSI (Open Systems Interconnection) l\xE0 m\u1ED9t m\xF4
+    h\xECnh tham chi\u1EBFu \u0111\u1EC3 m\xF4 t\u1EA3 c\xE1ch m\xE0 c\xE1c h\u1EC7
+    th\u1ED1ng m\u1EA1ng giao ti\u1EBFp v\u1EDBi nhau.   M\xF4 h\xECnh OSI ph\xE2n
+    chia qu\xE1 tr\xECnh giao ti\u1EBFp m\u1EA1ng th\xE0nh c\xE1c t\u1EA7ng \u0111\u1ED9c
+    l\u1EADp nh\u1EB1m t\u0103ng t\xEDnh t\u01B0\u01A1ng th\xEDch v\xE0 t\xE1ch bi\u1EC7t
+    gi\u1EEFa c\xE1c ph\u1EA7n c\u1EE7a m\u1ED9t h\u1EC7 th\u1ED1ng m\u1EA1ng.  T\u1EA7ng
+    Li\xEAn k\u1EBFt d\u1EEF li\u1EC7u (Data Link layer): Qu\u1EA3n l\xFD vi\u1EC7c
+    truy\u1EC1n d\u1EEF li\u1EC7u gi\u1EEFa c\xE1c thi\u1EBFt b\u1ECB tr\xEAn m\u1ED9t
+    \u0111\u01B0\u1EDDng truy\u1EC1n v\u1EADt l\xFD c\u1EE5 th\u1EC3. \u0110\u1EA3m
+    b\u1EA3o t\xEDnh to\xE0n v\u1EB9n d\u1EEF li\u1EC7u v\xE0 ki\u1EC3m so\xE1t l\u1ED7i."
+  correctAnswer: d

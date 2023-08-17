@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bdc20d91509f84fbccf4bf34d5638c, type: 3}
+  m_Name: Ques
+  m_EditorClassIdentifier: 
+  question: "N\u1EBFu b\u1EA1n nh\u1EADn \u0111\u01B0\u1EE3c email doanh nghi\u1EC7p
+    X th\xF4ng b\xE1o r\u1EB1ng t\xE0i kho\u1EA3n c\u1EE7a b\u1EA1n \u0111ang b\u1ECB
+    \u0111\u0103ng nh\u1EADp t\u1EA1i n\u01A1i kh\xE1c, trong email c\xF2n \u0111\xEDnh
+    k\xE8m \u0111\u01B0\u1EDDng link x\xE1c minh l\u1EA1i quy\u1EC1n s\u1EDF h\u1EEFu,
+    th\xF4ng tin c\xE1c nh\xE2n v\xE0 thay \u0111\u1ED5i m\u1EADt kh\u1EA9u m\u1EDBi.
+    B\u1EA1n s\u1EBD l\xE0m g\xEC?"
+  answerA: "L\u1EADp t\u1EE9c clink v\u1ED9i v\xE0o \u0111\u01B0\u1EDDng link."
+  answerB: "Chuy\u1EC3n ti\u1EBFp  email cho ng\u01B0\u1EDDi th\xE2n. "
+  answerC: "B\xECnh t\u0129nh kh\xF4ng n\xEAn qu\xE1 lo l\u1EAFng m\xE0 click v\u1ED9i
+    v\xE0o."
+  answerD: "B\xE1o c\xF4ng an."
+  explain: "L\xFAc n\xE0y b\u1EA1n c\u1EA7n b\xECnh t\u0129nh kh\xF4ng n\xEAn qu\xE1
+    lo l\u1EAFng m\xE0 click v\u1ED9i v\xE0o \u0111\u01B0\u1EDDng link d\u1EABn \u0111\u1EBFn
+    m\u1EAFc b\u1EABy c\u1EE7a hacker. M\u1ED9t \u0111\u01A1n v\u1ECB h\u1EE3p ph\xE1p
+    uy t\xEDn nh\u01B0 ng\xE2n h\xE0ng hay doanh nghi\u1EC7p ch\xEDnh th\u1ED1ng
+    s\u1EBD kh\xF4ng bao gi\u1EDD b\u1EAFt bu\u1ED9c b\u1EA1n ph\u1EA3i cung c\u1EA5p
+    th\xF4ng tin c\xE1 nh\xE2n qua email. V\xEC th\u1EBF b\u1EA1n tuy\u1EC7t \u0111\u1ED1i
+    kh\xF4ng \u0111\u01B0\u1EE3c cung c\u1EA5p th\xF4ng tin c\xE1 nh\xE2n c\u1EE7a
+    m\xECnh d\u1ED1i v\u1EDBi nh\u1EEFng email y\xEAu c\u1EA7u khai b\xE1o th\xF4ng
+    tin.  Email l\u1EEBa \u0111\u1EA3o  Lo\u1EA1i : email th\xF4ng b\xE1o t\xE0i
+    kho\u1EA3n b\u1ECB x\xE2m nh\u1EADp"
+  correctAnswer: c
