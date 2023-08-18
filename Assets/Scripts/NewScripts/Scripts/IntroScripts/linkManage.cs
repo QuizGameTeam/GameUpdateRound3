@@ -33,4 +33,19 @@ public class linkManage : MonoBehaviour
     {
         Application.OpenURL("https://www.auditboard.com/blog/privacy-vs-security/");
     }
+    public void fb_dung()
+    {
+        Application.OpenURL("https://www.facebook.com/LanaHoang237/");
+    } 
+
+    public void fb_tuong()
+    {
+        Application.OpenURL("https://www.facebook.com/profile.php?id=100028820640169");
+    } 
+
+    public void fb_binh()
+    {
+        Application.OpenURL("https://www.facebook.com/binhng.1401");
+    } 
+
 }
