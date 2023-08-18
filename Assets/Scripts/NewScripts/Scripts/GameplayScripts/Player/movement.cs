@@ -7,6 +7,9 @@ using System;
 
 public class movement : MonoBehaviour
 {
+
+    
+
     [SerializeField] float Speed = 6;
     [SerializeField] float Accel = 2;
     [SerializeField] float gravity = 2;
@@ -21,6 +24,7 @@ public class movement : MonoBehaviour
 
     void Awake()
     {
+        
         // Different characters with different characteristics
         if (gameObject.name == "Jumper")
         {

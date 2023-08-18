@@ -8,7 +8,7 @@ public class MovePlayer : MonoBehaviour
     // Moving player along with platformer
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Player")
+        if(collision.gameObject.tag == "Player")
         {
             collision.transform.SetParent(transform);
         }
@@ -17,7 +17,7 @@ public class MovePlayer : MonoBehaviour
     // Stop moving player when player leave platform
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Player")
+        if(collision.gameObject.tag == "Player")
         {
             collision.transform.SetParent(null);
         }

@@ -24,10 +24,8 @@ namespace Gameplay{
         [SerializeField] private GameObject
             vt_TopicPanel,
             vt_CharPanel,
-            vt_LoadPanel;
-        
-        [SerializeField] private AudioSource src;
-        [SerializeField] private AudioClip AudioIntro;
+            vt_LoadPanel,
+            vt_GamePanel;
 
         private GameState vt_GameState;
         public void SetGameState(GameState state)
@@ -40,9 +38,6 @@ namespace Gameplay{
         }
         void Awake()
         {
-            src.clip = AudioIntro;
-            src.loop = true;
-            src.Play();
             SetGameState(GameState.Topic);
         }
 
@@ -84,7 +79,6 @@ namespace Gameplay{
         {
             PlayerPrefs.SetString("name", NameCharac);
             SceneManager.LoadScene(Stage, LoadSceneMode.Single);
-            src.Stop();
         }
         public void GoHome()
         {
