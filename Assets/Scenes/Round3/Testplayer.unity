@@ -498,7 +498,7 @@ Animator:
   m_GameObject: {fileID: 760917034}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a282388c074b9a24fbbb5fb8b8a33eb2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -822,7 +822,7 @@ Animator:
   m_GameObject: {fileID: 1850477400}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9bfdec48c8ab76c42bed96bc8b03abea, type: 2}
+  m_Controller: {fileID: 9100000, guid: 291feb13a76289945974dddf7acd9954, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -932,6 +932,7 @@ GameObject:
   - component: {fileID: 2009672278}
   - component: {fileID: 2009672277}
   - component: {fileID: 2009672276}
+  - component: {fileID: 2009672279}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1005,6 +1006,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009672279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009672275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fd93894dd2b804fad5846130e31c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aheadDistance: 1
+  cameraSpeed: 1
 --- !u!1 &2020297516
 GameObject:
   m_ObjectHideFlags: 0
