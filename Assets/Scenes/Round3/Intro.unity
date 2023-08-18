@@ -6124,7 +6124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1657809078}
         m_TargetAssemblyTypeName: linkManage, Assembly-CSharp
-        m_MethodName: OpenNet1
+        m_MethodName: fb_thinh
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
