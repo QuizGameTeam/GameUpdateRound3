@@ -6,53 +6,44 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Gameplay{
     [Serializable]
     public enum GameState
     {
-        Difficult,
+        Topic,
         Character,
         Load,
-        Game,
-        Pause,
-        Ask,
-        Finish
     }
     public class gameManage : MonoBehaviour
     {
         
 
         [SerializeField] private GameObject
-            vt_DifficultyPanel,
+            vt_TopicPanel,
             vt_CharPanel,
             vt_LoadPanel,
-            vt_GamePanel,
-            vt_PausePanel,
-            vt_AskPanel,
-            vt_FinishPanel;
+            vt_GamePanel;
 
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
             vt_GameState = state;
-            vt_DifficultyPanel.SetActive(vt_GameState == GameState.Difficult);
+            vt_TopicPanel.SetActive(vt_GameState == GameState.Topic);
             vt_CharPanel.SetActive(vt_GameState == GameState.Character);
             vt_LoadPanel.SetActive(vt_GameState == GameState.Load);
-            vt_GamePanel.SetActive(vt_GameState == GameState.Game);
-            vt_PausePanel.SetActive(vt_GameState == GameState.Pause);
-            vt_AskPanel.SetActive(vt_GameState == GameState.Ask);
-            vt_FinishPanel.SetActive(vt_GameState == GameState.Finish);
+//            vt_GamePanel.SetActive(vt_GameState == GameState.Game);
         }
         void Awake()
         {
-            SetGameState(GameState.Difficult);
+            SetGameState(GameState.Topic);
         }
 
         // State-change function
-        public void Difficulty_State()
+        public void Topic_State()
         {
-            SetGameState(GameState.Difficult);
+            SetGameState(GameState.Topic);
         }
         public void Character_State()
         {
@@ -63,21 +54,13 @@ namespace Gameplay{
             Invoke("Game_State", 5.0f);
             SetGameState(GameState.Load);
         }
-        public void Game_State()
+        // public void Game_State()
+        // {
+        //     SceneManager.LoadScene("Intro", LoadSceneMode.Single);
+        // }
+        public void GoHome()
         {
-            SetGameState(GameState.Game);
-        }
-        public void Pause_State()
-        {
-            SetGameState(GameState.Pause);
-        }
-        public void Ask_State()
-        {
-            SetGameState(GameState.Ask);
-        }
-        public void Finish_State()
-        {
-            SetGameState(GameState.Finish);
+            SceneManager.LoadScene("Intro", LoadSceneMode.Single);
         }
     }
 }
