@@ -47,7 +47,6 @@ namespace intro
         // Start is called before the first frame update
         void Awake()
         {
-            SceneManager.LoadScene("Intro", LoadSceneMode.Single);
             src.clip = AudioIntro;
             src.loop = true;
             src.Play();
