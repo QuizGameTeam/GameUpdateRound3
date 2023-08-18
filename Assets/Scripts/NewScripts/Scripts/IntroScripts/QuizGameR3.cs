@@ -38,9 +38,12 @@ namespace intro
 
         private int m_QuestionIndex;
         public int randomIndex;
+        public bool click = false;
+
 
         void Start()
         {
+            click = false;
             randomIndex = Range(0, m_QuestionData.Length);
             m_QuestionIndex = randomIndex;
             InitQuestion(randomIndex);
@@ -67,63 +70,68 @@ namespace intro
         public void BtnAnswer_Pressed(string pSelectedAnswer)
         {
             bool flag = false;
-            string ans = m_QuestionData[m_QuestionIndex].correctAnswer;
-            if (ans == pSelectedAnswer)
+            if (!click)
             {
-                flag = true;
-                Debug.Log("Cau tra loi chinh xac");
-                src.PlayOneShot(AC_ans);
+                click = true;
+                string ans = m_QuestionData[m_QuestionIndex].correctAnswer;
+                if (ans == pSelectedAnswer)
+                {
+                    flag = true;
+                    Debug.Log("Cau tra loi chinh xac");
+                    src.PlayOneShot(AC_ans);
+                }
+                else 
+                {
+                    Debug.Log("Ngouuu");
+                    src.PlayOneShot(WA_ans);
+                }
+                // display correct ans
+                switch (ans)
+                {
+                    case "a":
+                        m_ImgAnswerA.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "b":
+                        m_ImgAnswerB.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "c":
+                        m_ImgAnswerC.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "d":
+                        m_ImgAnswerD.color = !flag ? Color.green : Color.red;
+                        break;
+                }           
+                //  user ans
+                switch (pSelectedAnswer)
+                {
+                    case "a":
+                        m_ImgAnswerA.color = flag ? Color.green : Color.red;
+                        break;
+                    case "b":
+                        m_ImgAnswerB.color = flag ? Color.green : Color.red;
+                        break;
+                    case "c":
+                        m_ImgAnswerC.color = flag ? Color.green : Color.red;
+                        break;
+                    case "d":
+                        m_ImgAnswerD.color = flag ? Color.green : Color.red;
+                        break;
+                }
+                Invoke("Explain", 2f);
             }
-            else 
-            {
-                Debug.Log("Ngouuu");
-                src.PlayOneShot(WA_ans);
-            }
-            // display correct ans
-            switch (ans)
-            {
-                case "a":
-                    m_ImgAnswerA.color = !flag ? Color.green : Color.red;
-                    break;
-                case "b":
-                    m_ImgAnswerB.color = !flag ? Color.green : Color.red;
-                    break;
-                case "c":
-                    m_ImgAnswerC.color = !flag ? Color.green : Color.red;
-                    break;
-                case "d":
-                    m_ImgAnswerD.color = !flag ? Color.green : Color.red;
-                    break;
-            }           
-            //  user ans
-            switch (pSelectedAnswer)
-            {
-                case "a":
-                    m_ImgAnswerA.color = flag ? Color.green : Color.red;
-                    break;
-                case "b":
-                    m_ImgAnswerB.color = flag ? Color.green : Color.red;
-                    break;
-                case "c":
-                    m_ImgAnswerC.color = flag ? Color.green : Color.red;
-                    break;
-                case "d":
-                    m_ImgAnswerD.color = flag ? Color.green : Color.red;
-                    break;
-            }
-            Invoke("Explain", 2f);
         }
         private void Explain()
         {
             intro.SetGameState(GameState.Explain);
             InitQuestion(randomIndex);
             //src.Stop();
-
+            click = false;
         }
 
 
         public void Continue_Pressed()
         {
+            click = false;
             randomIndex = Range(0, m_QuestionData.Length);
             Debug.Log(randomIndex);
             InitQuestion(randomIndex);

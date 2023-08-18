@@ -32,7 +32,7 @@ namespace intro
 
         [SerializeField] private AudioSource src;
         [SerializeField] private AudioClip AudioIntro;
-
+        bool click = true;
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
@@ -77,6 +77,7 @@ namespace intro
         }
         public void Quiz_State()
         {
+            //quiz.click = false;
             SetGameState(GameState.Quiz);
         }
         public void Explain_State()
