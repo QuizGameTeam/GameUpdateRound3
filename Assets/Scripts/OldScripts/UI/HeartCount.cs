@@ -30,7 +30,7 @@ public class HeartCount : MonoBehaviour
         ResetHealth();
         ScoreCount = FindObjectOfType<ScoreCount>();
         gamemanager = FindObjectOfType<gameManager>();
-        PlayerPrefs.SetInt("Score", ScoreCount.Score);
+//        PlayerPrefs.SetInt("Score", ScoreCount.Score);
         
         //gameManager = GameObject.Find("GameoverPanel");
     }

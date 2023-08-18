@@ -10,7 +10,7 @@ public class Checkpoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerRespawn = GameObject.Find("Player").GetComponent<Respawn>();
+//        playerRespawn = GameObject.Find("Player").GetComponent<Respawn>();
         ColorRenderer = GetComponent<Renderer>();
     }
 

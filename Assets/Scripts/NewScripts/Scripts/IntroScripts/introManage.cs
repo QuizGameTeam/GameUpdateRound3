@@ -32,7 +32,6 @@ namespace intro
 
         [SerializeField] private AudioSource src;
         [SerializeField] private AudioClip AudioIntro;
-        bool click = true;
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
