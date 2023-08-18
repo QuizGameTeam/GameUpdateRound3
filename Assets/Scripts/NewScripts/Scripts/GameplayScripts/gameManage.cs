@@ -28,6 +28,7 @@ namespace Gameplay{
         
         [SerializeField] private AudioSource src;
         [SerializeField] private AudioClip AudioIntro;
+        [SerializeField] private AudioClip AudioPlay;
 
         private GameState vt_GameState;
         public void SetGameState(GameState state)
@@ -82,6 +83,7 @@ namespace Gameplay{
         }
         public void Game_State()
         {
+            
             PlayerPrefs.SetString("name", NameCharac);
             SceneManager.LoadScene(Stage, LoadSceneMode.Single);
         }

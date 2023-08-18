@@ -857,7 +857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &541487251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2391,6 +2391,7 @@ MonoBehaviour:
   vt_LoadPanel: {fileID: 541487250}
   src: {fileID: 2037701528}
   AudioIntro: {fileID: 8300000, guid: 5fc7203e69a73ac4ebbefcdf170d57cf, type: 3}
+  AudioPlay: {fileID: 8300000, guid: 02fb96197fcdb8a4b842c067a206537c, type: 3}
 --- !u!1 &1652256322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +3140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2089142872
 RectTransform:
   m_ObjectHideFlags: 0

@@ -5,8 +5,16 @@ public class GameplayScripts : MonoBehaviour
 {
     public string name = "Jumper";
     // Start is called before the first frame update
+    [SerializeField] private AudioSource src;
+    [SerializeField] private AudioClip AudioPlay;
+    
+
     void Start()
     {
+        src.clip = AudioPlay;
+        src.loop = true;
+        src.Play();
+        
         name = PlayerPrefs.GetString("name");
         
         if (name == "Jumper")
