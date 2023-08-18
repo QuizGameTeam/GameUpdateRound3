@@ -47,5 +47,9 @@ public class linkManage : MonoBehaviour
     {
         Application.OpenURL("https://www.facebook.com/binhng.1401");
     } 
+    public void fb_thinh()
+    {
+        Application.OpenURL("https://www.facebook.com/profile.php?id=100064874541965&mibextid=LQQJ4d");
+    } 
 
 }
