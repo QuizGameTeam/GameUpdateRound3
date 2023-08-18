@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Round3/Gameplay.unity
     guid: 98486158ecffc7240bf5e8994d9bd83c
+  - enabled: 1
+    path: Assets/Scenes/Round3/Phishing.unity
+    guid: 4c3cb944b29c22843b43e0a04ec72e68
+  - enabled: 1
+    path: Assets/Scenes/Round3/Privacy.unity
+    guid: 83d26747d11893e40845d79225db9db7
   m_configObjects: {}

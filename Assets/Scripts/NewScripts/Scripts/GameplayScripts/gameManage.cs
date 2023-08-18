@@ -18,7 +18,8 @@ namespace Gameplay{
     }
     public class gameManage : MonoBehaviour
     {
-        
+        public string NameCharac;
+        public string Stage;
 
         [SerializeField] private GameObject
             vt_TopicPanel,
@@ -46,18 +47,39 @@ namespace Gameplay{
             SetGameState(GameState.Topic);
         }
         public void Character_State()
-        {
+        {            
             SetGameState(GameState.Character);
+        }
+        public void ChoosePhising()
+        {
+            Stage = "Phising";
+        }
+        public void ChoosePrivacy()
+        {
+            Stage = "Privacy";
         }
         public void Load_State()
         {
             Invoke("Game_State", 5.0f);
             SetGameState(GameState.Load);
         }
-        // public void Game_State()
-        // {
-        //     SceneManager.LoadScene("Intro", LoadSceneMode.Single);
-        // }
+        public void ChooseJumper()
+        {
+            NameCharac = "Jumper";
+        }
+        public void ChooseRunner()
+        {
+            NameCharac = "Runner";
+        }
+        public void ChooseFlyer()
+        {
+            NameCharac = "Flyer";
+        }
+        public void Game_State()
+        {
+            PlayerPrefs.SetString("name", NameCharac);
+            SceneManager.LoadScene(Stage, LoadSceneMode.Single);
+        }
         public void GoHome()
         {
             SceneManager.LoadScene("Intro", LoadSceneMode.Single);

@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 510352603}
   - component: {fileID: 510352602}
   m_Layer: 0
-  m_Name: Choose
+  m_Name: Jumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,6 +652,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1606729188}
+        m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
+        m_MethodName: ChooseJumper
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &510352603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &541487251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -741,7 +753,7 @@ GameObject:
   - component: {fileID: 618030122}
   - component: {fileID: 618030121}
   m_Layer: 0
-  m_Name: Choose (2)
+  m_Name: Runner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -815,6 +827,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1606729188}
         m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
         m_MethodName: Load_State
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1606729188}
+        m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
+        m_MethodName: ChooseRunner
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1049,7 +1073,7 @@ GameObject:
   - component: {fileID: 925239613}
   - component: {fileID: 925239612}
   m_Layer: 5
-  m_Name: btnPhishing
+  m_Name: Phishing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1132,6 +1156,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1606729188}
+        m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
+        m_MethodName: ChoosePhising
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &925239613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1219,7 @@ GameObject:
   - component: {fileID: 934545103}
   - component: {fileID: 934545102}
   m_Layer: 0
-  m_Name: Choose (1)
+  m_Name: Flyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1257,6 +1293,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1606729188}
         m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
         m_MethodName: Load_State
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1606729188}
+        m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
+        m_MethodName: ChooseFlyer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1527,7 +1575,7 @@ GameObject:
   - component: {fileID: 1344380517}
   - component: {fileID: 1344380516}
   m_Layer: 5
-  m_Name: btnPrivacy
+  m_Name: Privacy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1601,6 +1649,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1606729188}
         m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
         m_MethodName: Character_State
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1606729188}
+        m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
+        m_MethodName: ChoosePrivacy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2002,6 +2062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd702633f1705d4f9fef88a203fad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NameCharac: 
+  Stage: 
   vt_TopicPanel: {fileID: 2089142871}
   vt_CharPanel: {fileID: 2071410022}
   vt_LoadPanel: {fileID: 541487250}
@@ -2570,7 +2632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2071410023
 RectTransform:
   m_ObjectHideFlags: 0
