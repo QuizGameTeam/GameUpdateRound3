@@ -1158,7 +1158,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1606729188}
         m_TargetAssemblyTypeName: Gameplay.gameManage, Assembly-CSharp
-        m_MethodName: ChoosePhising
+        m_MethodName: ChoosePhishing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2067,7 +2067,8 @@ MonoBehaviour:
   vt_TopicPanel: {fileID: 2089142871}
   vt_CharPanel: {fileID: 2071410022}
   vt_LoadPanel: {fileID: 541487250}
-  vt_GamePanel: {fileID: 0}
+  src: {fileID: 2037701528}
+  AudioIntro: {fileID: 8300000, guid: 5fc7203e69a73ac4ebbefcdf170d57cf, type: 3}
 --- !u!1 &1659884397
 GameObject:
   m_ObjectHideFlags: 0
