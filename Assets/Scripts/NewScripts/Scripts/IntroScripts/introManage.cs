@@ -6,7 +6,6 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Random;
 
 namespace intro
 {
