@@ -15,7 +15,6 @@ namespace Gameplay{
         Topic,
         Character,
         Load,
-        Game,
     }
     public class gameManage : MonoBehaviour
     {
