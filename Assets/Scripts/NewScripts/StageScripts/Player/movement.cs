@@ -95,17 +95,17 @@ public class movement : MonoBehaviour
         }
         anim.SetBool("IsJumping", !grounded);
         // Respawn if falling
-        if (transform.position.y < border)
-        {
-            RespawnNow();
-        }
+        // if (transform.position.y < border)
+        // {
+        //     RespawnNow();
+        // }
     }
 
-    public void RespawnNow() 
-    {
-        transform.position = respawnPoint;
-        HeartCount.TakeDamage(1);
-    }
+    // public void RespawnNow() 
+    // {
+    //     transform.position = respawnPoint;
+    //     HeartCount.TakeDamage(1);
+    // }
 
     // Check collision
     private void OnCollisionEnter2D(Collision2D collision) 
@@ -126,14 +126,25 @@ public class movement : MonoBehaviour
         }
         if (collision.gameObject.name == "Endpoint")
         {
-            GameplayScripts.GameWin_State();
+            GameplayScripts.GameOver_State();
             GameplayScripts.Pause();
         }
-        // Respawn if touch enemy
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.name == "Chall")
         {
-            RespawnNow();
+            GameplayScripts.Explain_StateChall();
+            //GameplayScripts.Pause();
         }
+        if (collision.gameObject.name == "ques")
+        {
+            GameplayScripts.Ask_State();
+            //GameplayScripts.Pause();
+        }
+        
+        // Respawn if touch enemy
+        // if (collision.gameObject.tag == "Enemy")
+        // {
+        //     RespawnNow();
+        // }
     }
     private void OnCollisionExit2D(Collision2D collision) 
     {

@@ -67,7 +67,7 @@ namespace Gameplay{
         }
         public void Load_State()
         {
-            Invoke("Game_State", 5.0f);
+            Invoke("Game_State", 3.0f);
             SetGameState(GameState.Load);
         }
         public void ChooseJumper()

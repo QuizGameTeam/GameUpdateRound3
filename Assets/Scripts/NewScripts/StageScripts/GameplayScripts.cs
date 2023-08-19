@@ -12,9 +12,11 @@ namespace UI{
     {
         UIDisplay,
         Ask,
-        Explain,
+        ExplainChall,
+        ExplainAsk,
         Pause,
         GameOver,
+        Continue,
         GameWin,
     }
     public class GameplayScripts : MonoBehaviour
@@ -25,7 +27,8 @@ namespace UI{
         [SerializeField] private GameObject
             vt_UI,
             vt_Ask,
-            vt_Explain,
+            vt_ExplainChall,
+            vt_ExplainAsk,
             vt_Pause,
             vt_GameOver,
             vt_GameWin;
@@ -39,7 +42,9 @@ namespace UI{
             vt_GameState = state;
             vt_UI.SetActive(vt_GameState == GameState.UIDisplay);
             vt_Ask.SetActive(vt_GameState == GameState.Ask);
-            vt_Explain.SetActive(vt_GameState == GameState.Explain);
+            vt_ExplainChall.SetActive(vt_GameState == GameState.ExplainChall);
+            vt_ExplainAsk.SetActive(vt_GameState == GameState.ExplainAsk);
+
             vt_Pause.SetActive(vt_GameState == GameState.Pause);
             vt_GameOver.SetActive(vt_GameState == GameState.GameOver);
             vt_GameWin.SetActive(vt_GameState == GameState.GameWin);
@@ -113,9 +118,13 @@ namespace UI{
             SetGameState(GameState.Ask);
         }
         // State-change function
-        public void Explain_State()
+        public void Explain_StateChall()
         {
-            SetGameState(GameState.Explain);
+            SetGameState(GameState.ExplainChall);
+        }
+        public void Explain_StateAsk()
+        {
+            SetGameState(GameState.ExplainAsk);
         }
         public void Pause_State()
         {
@@ -128,6 +137,10 @@ namespace UI{
         public void GameWin_State()
         {
             SetGameState(GameState.GameWin);
+        }
+        public void GoHome()
+        {
+            SceneManager.LoadScene("Intro", LoadSceneMode.Single);
         }
     }
 }
