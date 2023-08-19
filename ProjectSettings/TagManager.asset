@@ -8,11 +8,8 @@ TagManager:
   - Checkpoint
   - Ground
   - Enemy
-  - Collect
   - Info
-  - Death
   - UI
-  - Heart
   - Coin
   layers:
   - Default
