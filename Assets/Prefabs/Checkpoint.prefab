@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1123951556859221783}
   - component: {fileID: 1123951556859221782}
   - component: {fileID: 4125130508449163168}
-  - component: {fileID: 5587974670224747910}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Checkpoint
@@ -109,15 +108,3 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &5587974670224747910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123951556859221780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311f760c55477a54d9b86062c7bab9d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
