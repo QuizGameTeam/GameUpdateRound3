@@ -17,6 +17,7 @@ namespace UI{
         Pause,
         GameOver,
         Continue,
+        Sumbit,
         GameWin,
     }
     public class GameplayScripts : MonoBehaviour
@@ -30,6 +31,7 @@ namespace UI{
             vt_ExplainChall,
             vt_ExplainAsk,
             vt_Pause,
+            vt_sumbit,
             vt_GameOver,
             vt_GameWin;
 
@@ -48,6 +50,8 @@ namespace UI{
             vt_Pause.SetActive(vt_GameState == GameState.Pause);
             vt_GameOver.SetActive(vt_GameState == GameState.GameOver);
             vt_GameWin.SetActive(vt_GameState == GameState.GameWin);
+            vt_sumbit.SetActive(vt_GameState == GameState.Sumbit);
+
         }
 
         void Start()
@@ -121,6 +125,10 @@ namespace UI{
         public void Explain_StateChall()
         {
             SetGameState(GameState.ExplainChall);
+        }
+        public void Sumbit_ans()
+        {
+            SetGameState(GameState.Sumbit);
         }
         public void Explain_StateAsk()
         {

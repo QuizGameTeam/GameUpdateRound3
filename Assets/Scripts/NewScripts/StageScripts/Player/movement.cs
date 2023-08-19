@@ -139,6 +139,11 @@ public class movement : MonoBehaviour
             GameplayScripts.Ask_State();
             //GameplayScripts.Pause();
         }
+        if (collision.gameObject.name == "win")
+        {
+            GameplayScripts.GameWin_State();
+            //GameplayScripts.Pause();
+        }
         
         // Respawn if touch enemy
         // if (collision.gameObject.tag == "Enemy")
