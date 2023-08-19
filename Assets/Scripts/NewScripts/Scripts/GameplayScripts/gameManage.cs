@@ -21,15 +21,15 @@ namespace Gameplay{
         public string NameCharac;
         public string Stage;
 
+        [SerializeField] private AudioSource src;
+        [SerializeField] private AudioClip AudioIntro;
+        [SerializeField] private AudioClip AudioPlay;
+
         [SerializeField] private GameObject
             vt_TopicPanel,
             vt_CharPanel,
             vt_LoadPanel;
         
-        [SerializeField] private AudioSource src;
-        [SerializeField] private AudioClip AudioIntro;
-        [SerializeField] private AudioClip AudioPlay;
-
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
@@ -37,13 +37,14 @@ namespace Gameplay{
             vt_TopicPanel.SetActive(vt_GameState == GameState.Topic);
             vt_CharPanel.SetActive(vt_GameState == GameState.Character);
             vt_LoadPanel.SetActive(vt_GameState == GameState.Load);
-//            vt_GamePanel.SetActive(vt_GameState == GameState.Game);
         }
+
         void Awake()
         {
             src.clip = AudioIntro;
             src.loop = true;
             src.Play();
+            
             SetGameState(GameState.Topic);
         }
 
@@ -83,7 +84,6 @@ namespace Gameplay{
         }
         public void Game_State()
         {
-            
             PlayerPrefs.SetString("name", NameCharac);
             SceneManager.LoadScene(Stage, LoadSceneMode.Single);
         }

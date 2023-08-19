@@ -17,11 +17,12 @@ namespace intro
         Learn,
         Quiz,
         Explain,
-        Exit,
     }
     public class introManage : MonoBehaviour
     {
         public QuizGameR3 quiz;
+        [SerializeField] private AudioSource src;
+        [SerializeField] private AudioClip AudioIntro;
 
         [SerializeField] private GameObject
             vt_HomePanel,
@@ -30,8 +31,6 @@ namespace intro
             vt_QuizPanel,
             vt_ExplainPanel;
 
-        [SerializeField] private AudioSource src;
-        [SerializeField] private AudioClip AudioIntro;
         private GameState vt_GameState;
         public void SetGameState(GameState state)
         {
@@ -41,7 +40,6 @@ namespace intro
             vt_LearnPanel.SetActive(vt_GameState == GameState.Learn);
             vt_QuizPanel.SetActive(vt_GameState == GameState.Quiz);
             vt_ExplainPanel.SetActive(vt_GameState == GameState.Explain);
-
         }
         // Start is called before the first frame update
         void Awake()
@@ -63,7 +61,7 @@ namespace intro
 
         public void Home_State()
         {
-            SetGameState(GameState.Home);
+            SceneManager.LoadScene("Intro", LoadSceneMode.Single);
         }
         public void Credit_State()
         {
@@ -75,7 +73,6 @@ namespace intro
         }
         public void Quiz_State()
         {
-            //quiz.click = false;
             SetGameState(GameState.Quiz);
         }
         public void Explain_State()
