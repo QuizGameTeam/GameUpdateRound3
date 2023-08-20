@@ -133,7 +133,7 @@ public class movement : MonoBehaviour
         // Reach endpoint
         if (collision.gameObject.name == "Endpoint")
         {
-            GameplayScripts.GameWin_State();
+            GameplayScripts.Sumbit_ans();
             GameplayScripts.Pause();
         }
         if (collision.gameObject.name == "Chall")
@@ -144,7 +144,7 @@ public class movement : MonoBehaviour
         if (collision.gameObject.tag == "ques")
         {
             GameplayScripts.Ask_State();
-            GameplayScripts.Pause();
+            //GameplayScripts.Pause();
         }
         
         
