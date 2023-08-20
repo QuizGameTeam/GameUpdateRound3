@@ -39,7 +39,7 @@ public class HeartCount : MonoBehaviour
         currentHealth = currentHealth - damage;
         if (currentHealth <= 0)
         {
-            GameplayScripts.GameOver_State();
+            GameplayScripts.OverWithoutSumbit();
             GameplayScripts.Pause();
         }
     }

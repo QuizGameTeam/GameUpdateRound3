@@ -18,6 +18,7 @@ namespace UI{
         GameOver,
         Continue,
         Sumbit,
+        Over_WithoutSumbit,
         GameWin,
     }
     public class GameplayScripts : MonoBehaviour
@@ -33,6 +34,7 @@ namespace UI{
             vt_Pause,
             vt_sumbit,
             vt_GameOver,
+            vt_Over_WithoutSumbit,
             vt_GameWin;
 
         [SerializeField] private AudioSource src;
@@ -51,6 +53,7 @@ namespace UI{
             vt_GameOver.SetActive(vt_GameState == GameState.GameOver);
             vt_GameWin.SetActive(vt_GameState == GameState.GameWin);
             vt_sumbit.SetActive(vt_GameState == GameState.Sumbit);
+            vt_Over_WithoutSumbit.SetActive(vt_GameState == GameState.Over_WithoutSumbit);
 
         }
 
@@ -120,6 +123,10 @@ namespace UI{
         public void Ask_State()
         {
             SetGameState(GameState.Ask);
+        }
+        public void OverWithoutSumbit()
+        {
+            SetGameState(GameState.Over_WithoutSumbit);
         }
         // State-change function
         public void Explain_StateChall()
