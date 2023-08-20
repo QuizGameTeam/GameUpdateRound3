@@ -109,14 +109,6 @@ public class movement : MonoBehaviour
     }
 
     // Check collision
-    private void OnCollisionStay2D(Collision2D collision) 
-    {
-        // Ground check enter
-        if (collision.gameObject.tag == "Ground")
-        {
-            grounded = true;
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision) 
     {
         // Ground check enter
@@ -124,6 +116,7 @@ public class movement : MonoBehaviour
         {
             grounded = true;
         }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
