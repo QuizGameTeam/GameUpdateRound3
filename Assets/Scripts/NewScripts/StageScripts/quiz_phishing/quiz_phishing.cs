@@ -113,7 +113,7 @@ namespace UI
                 Invoke("Explain", 2f);
             }
         }
-        private void Explain()
+        public void Explain()
         {
             game.Explain_StateAsk();
             click = false;
