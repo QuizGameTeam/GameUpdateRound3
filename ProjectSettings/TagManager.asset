@@ -11,6 +11,7 @@ TagManager:
   - Info
   - UI
   - Coin
+  - ques
   layers:
   - Default
   - TransparentFX
