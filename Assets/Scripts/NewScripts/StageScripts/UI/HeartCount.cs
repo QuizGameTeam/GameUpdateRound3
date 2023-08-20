@@ -7,40 +7,44 @@ using UnityEngine.SceneManagement;
 using System;
 using UI;
 
-public class HeartCount : MonoBehaviour
+namespace UI
 {
-    private Text HeartNum;
-    public float startingHealth = 3;
-    public float currentHealth = 3;
 
-    private GameObject player;
-    // private movement movement;
-    // private ScoreCount ScoreCount;
-    private GameplayScripts GameplayScripts;
+    public class HeartCount : MonoBehaviour
+    {
+        private Text HeartNum;
+        public float startingHealth = 3;
+        public float currentHealth = 3;
 
-    void Start()
-    {
-        player = GameObject.Find("Player");
-        HeartNum = GetComponent<Text>();
-        // movement = FindObjectOfType<movement>();
-        // ScoreCount = FindObjectOfType<ScoreCount>();
-        GameplayScripts = FindObjectOfType<GameplayScripts>();
-    }
-    void Update()
-    {
-        // Show heart counter
-        HeartNum.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
-    }
+        private GameObject player;
+        // private movement movement;
+        // private ScoreCount ScoreCount;
+        private GameplayScripts GameplayScripts;
 
-    // Calculate heart
-    public void TakeDamage(float damage)
-    {
-        // Take damage
-        currentHealth = currentHealth - damage;
-        if (currentHealth <= 0)
+        void Start()
         {
-            GameplayScripts.OverWithoutSumbit();
-            GameplayScripts.Pause();
+            player = GameObject.Find("Player");
+            HeartNum = GetComponent<Text>();
+            // movement = FindObjectOfType<movement>();
+            // ScoreCount = FindObjectOfType<ScoreCount>();
+            GameplayScripts = FindObjectOfType<GameplayScripts>();
+        }
+        void Update()
+        {
+            // Show heart counter
+            HeartNum.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
+        }
+
+        // Calculate heart
+        public void TakeDamage(float damage)
+        {
+            // Take damage
+            currentHealth = currentHealth - damage;
+            if (currentHealth <= 0)
+            {
+                GameplayScripts.OverWithoutSumbit();
+                GameplayScripts.Pause();
+            }
         }
     }
 }

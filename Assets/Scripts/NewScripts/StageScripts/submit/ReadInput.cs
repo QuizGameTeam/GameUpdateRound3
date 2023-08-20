@@ -12,14 +12,13 @@ namespace UI
         public GameplayScripts game;
         public TMP_InputField Input_Text;
         string ans = "crypto{You_will_be_working_with_hex_strings_a_lot}";
-
         //[SerializeField] public GameObject PlayerSubmit;
 
 
         // Start is called before the first frame update
         void Start()
         {
-            
+            Input_Text.text = "Enter text";
         }
 
         // Update is called once per frame
@@ -30,12 +29,7 @@ namespace UI
         public void ReadStringInput(string s)
         {
             Input_Text.interactable = true;
-            if (Input_Text.text != null) Debug.Log(Input_Text.text);
-           // Input_Text.text() = s;
-           // input = s;
-            
-        //    Debug.Log(PlayerSubmit.GetComponent<InputField>().text);
-            
+            //if (Input_Text.text != null) Debug.Log(Input_Text.text);
             
         }
         public void btnSumbit()
@@ -43,7 +37,7 @@ namespace UI
             
             Debug.Log(Input_Text.text);
             Debug.Log(ans);
-            if (input == ans) 
+            if (Input_Text.text == ans) 
             {
                 game.GameWin_State();
             }

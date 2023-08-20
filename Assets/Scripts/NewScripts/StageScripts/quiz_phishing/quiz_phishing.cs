@@ -5,6 +5,8 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using static UnityEngine.Random;
+using UnityEngine.SceneManagement;
+using UI;
 
 
 namespace UI
@@ -35,7 +37,7 @@ namespace UI
 
         private int m_QuestionIndex;
         public bool click = false;
-
+        public HeartCount Heart;
 
         void Start()
         {
@@ -76,6 +78,7 @@ namespace UI
                 else 
                 {
                     Debug.Log("Ngouuu");
+                    Heart.TakeDamage(1);
                     src.PlayOneShot(WA_ans);
                 }
                 // display correct ans
@@ -117,6 +120,7 @@ namespace UI
         {
             game.Explain_StateAsk();
             click = false;
+            InitQuestion(0);
         }
 
     }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631858e10d3c68748935212815e7f63e, type: 3}
+  m_Name: privacy
+  m_EditorClassIdentifier: 
+  question: " Ch\xFAng ta h\xE3y th\u1EF1c hi\u1EC7n m\u1ED9t chuy\u1EBFn \u0111i
+    \u0111\u1EBFn nasa.gov v\xE0o ng\xE0y 31 th\xE1ng 12 n\u0103m 1996. N\u1EBFu
+    b\u1EA1n c\xF3 th\u1EC3 cho t\xF4i bi\u1EBFt NASA \u0111\xE3 li\u1EC7t k\xEA
+    email n\xE0o tr\xEAn trang web c\u1EE7a h\u1ECD. B\u1EA1n s\u1EBD \u0111\u01B0\u1EE3c
+    th\xEAm m\u1ED9t l\u1EA7n h\u1ED3i sinh v\xE0 ti\u1EC1n."
+  answerA: today@nasa.gov
+  answerB: nasa.gov@gmail.com
+  answerC: huttle@nasa.gov
+  answerD: Shuttle-Mir @nasa.gov
+  correctAnswer: a

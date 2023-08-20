@@ -6,6 +6,11 @@ public class HintPop : MonoBehaviour
 {
     public GameObject mess;
 
+    void Start ()
+    {
+        mess.SetActive(false);
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
