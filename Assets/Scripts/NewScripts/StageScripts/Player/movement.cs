@@ -13,7 +13,7 @@ public class movement : MonoBehaviour
     [SerializeField] float Accel = 2;
     [SerializeField] float gravity = 2;
 
-    private float border = -100;
+    private float border = -500;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -91,21 +91,22 @@ public class movement : MonoBehaviour
         // Jump method
         if (Input.GetKeyDown(KeyCode.W) && grounded)
         {
+            grounded = false;
             GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
         anim.SetBool("IsJumping", !grounded);
         // Respawn if falling
-        // if (transform.position.y < border)
-        // {
-        //     RespawnNow();
-        // }
+        if (transform.position.y < border)
+        {
+            RespawnNow();
+        }
     }
 
-    // public void RespawnNow() 
-    // {
-    //     transform.position = respawnPoint;
-    //     HeartCount.TakeDamage(1);
-    // }
+    public void RespawnNow() 
+    {
+        transform.position = respawnPoint;
+        HeartCount.TakeDamage(1);
+    }
 
     // Check collision
     private void OnCollisionEnter2D(Collision2D collision) 
@@ -119,37 +120,34 @@ public class movement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Respawn if touch enemy
+        if (collision.gameObject.tag == "Enemy")
+        {
+            RespawnNow();
+        }
         // Reset checkpoint
         if (collision.gameObject.tag == "Checkpoint")
         {
             respawnPoint = transform.position;
         }
+        // Reach endpoint
         if (collision.gameObject.name == "Endpoint")
         {
-            GameplayScripts.GameOver_State();
+            GameplayScripts.GameWin_State();
             GameplayScripts.Pause();
         }
         if (collision.gameObject.name == "Chall")
         {
             GameplayScripts.Explain_StateChall();
-            //GameplayScripts.Pause();
+            GameplayScripts.Pause();
         }
-        if (collision.gameObject.name == "ques")
+        if (collision.gameObject.tag == "ques")
         {
             GameplayScripts.Ask_State();
-            //GameplayScripts.Pause();
-        }
-        if (collision.gameObject.name == "win")
-        {
-            GameplayScripts.GameWin_State();
-            //GameplayScripts.Pause();
+            GameplayScripts.Pause();
         }
         
-        // Respawn if touch enemy
-        // if (collision.gameObject.tag == "Enemy")
-        // {
-        //     RespawnNow();
-        // }
+        
     }
     private void OnCollisionExit2D(Collision2D collision) 
     {
