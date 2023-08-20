@@ -4169,6 +4169,7 @@ GameObject:
   - component: {fileID: 497823563}
   - component: {fileID: 497823565}
   - component: {fileID: 497823566}
+  - component: {fileID: 497823567}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
@@ -4257,6 +4258,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aheadDistance: 1
   cameraSpeed: 1
+--- !u!114 &497823567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497823562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa922f7d1ac1346448fcee70a122328c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.5
 --- !u!1 &501141198
 GameObject:
   m_ObjectHideFlags: 0
