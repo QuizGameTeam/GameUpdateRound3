@@ -81,8 +81,8 @@ namespace intro
         }
         public void ExitGame() 
         {
-            UnityEditor.EditorApplication.isPlaying = false;
-            //Application.Quit(); // when build game
+            //UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit(); // when build game
         }
         public void PlayGame()
         {
