@@ -31,7 +31,6 @@ public class movement : MonoBehaviour
         anim = GetComponent<Animator>();
         HeartCount = FindObjectOfType<HeartCount>();
         GameplayScripts = FindObjectOfType<GameplayScripts>();
-        //controller = gameObject.AddComponent<CharacterController>();
 
     }
     void Awake()
@@ -42,7 +41,7 @@ public class movement : MonoBehaviour
             // Jump higher
             Speed = 6;
             Accel = 2;
-            gravity = 7;
+            gravity = 6;
             jumpForce = 6;
         }
         else if (gameObject.name == "Runner")
@@ -85,29 +84,6 @@ public class movement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
-        // ------------------------------------
-        // grounded = controller.isGrounded;
-        // if (grounded &amp;&amp; playerVelocity.y < 0)
-        // {
-        //     playerVelocity.y = 0f;
-        // }
-
-        // Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        // controller.Move(move * Time.deltaTime * Speed);
-
-        // if (move != Vector3.zero)
-        // {
-        //     gameObject.transform.forward = move;
-        // }
-
-        // // Changes the height position of the player..
-        // if (Input.GetButtonDown("Jump") &amp;&amp; grounded)
-        // {
-        //     playerVelocity.y += Mathf.Sqrt(jumpForce * -3.0f * gravity);
-        // }
-
-        // playerVelocity.y += gravity * Time.deltaTime;
-        // controller.Move(playerVelocity * Time.deltaTime);
         
     }
     // Update is called once per frame
@@ -135,6 +111,15 @@ public class movement : MonoBehaviour
 
     // Check collision
     private void OnCollisionEnter2D(Collision2D collision) 
+    {
+        // Ground check enter
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
+        
+    }
+    private void OnCollisionStay2D(Collision2D collision) 
     {
         // Ground check enter
         if (collision.gameObject.tag == "Ground")

@@ -157,5 +157,9 @@ namespace UI{
         {
             SceneManager.LoadScene("Intro", LoadSceneMode.Single);
         }
+        public void Restartgame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        }
     }
 }
