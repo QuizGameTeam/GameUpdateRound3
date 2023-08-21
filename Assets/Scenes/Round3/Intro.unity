@@ -3597,7 +3597,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -164.2031, y: -45.0754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275438131
 MonoBehaviour:
@@ -5093,13 +5093,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quiz: {fileID: 0}
+  src: {fileID: 65987439}
+  AudioIntro: {fileID: 8300000, guid: 5fc7203e69a73ac4ebbefcdf170d57cf, type: 3}
   vt_HomePanel: {fileID: 1206168927}
   vt_CreditPanel: {fileID: 2100317633}
   vt_LearnPanel: {fileID: 1657809076}
   vt_QuizPanel: {fileID: 1615557178}
   vt_ExplainPanel: {fileID: 1934878807}
-  src: {fileID: 65987439}
-  AudioIntro: {fileID: 8300000, guid: 5fc7203e69a73ac4ebbefcdf170d57cf, type: 3}
 --- !u!114 &1606729189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6548,7 +6548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1934878808
 RectTransform:
   m_ObjectHideFlags: 0
