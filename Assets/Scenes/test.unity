@@ -1590,6 +1590,7 @@ MonoBehaviour:
   m_QuestionData:
   - {fileID: 11400000, guid: d07f1237c483b5a43aa3bd2dc05f9371, type: 2}
   click: 0
+  Heart: {fileID: 0}
 --- !u!114 &191369940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5296,7 +5297,7 @@ SpriteRenderer:
   m_Size: {x: 3.49, y: 3.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &604080388
@@ -6326,7 +6327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &773285604
 Transform:
   m_ObjectHideFlags: 0
@@ -16098,17 +16099,17 @@ Transform:
   - {fileID: 1195163205}
   - {fileID: 162982843}
   - {fileID: 1720970223}
-  - {fileID: 474559564}
   - {fileID: 530713958}
-  - {fileID: 125581303}
+  - {fileID: 1226151372}
   - {fileID: 1547845833}
   - {fileID: 167565009}
-  - {fileID: 1226151372}
-  - {fileID: 1814216019}
-  - {fileID: 210367825}
-  - {fileID: 1811401410}
-  - {fileID: 1147893512}
   - {fileID: 957891366}
+  - {fileID: 1814216019}
+  - {fileID: 1811401410}
+  - {fileID: 210367825}
+  - {fileID: 474559564}
+  - {fileID: 1147893512}
+  - {fileID: 125581303}
   - {fileID: 1732127593}
   - {fileID: 160672751}
   - {fileID: 1562751580}
