@@ -4152,8 +4152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd93894dd2b804fad5846130e31c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aheadDistance: 1
-  cameraSpeed: 1
+  aheadDistance: 2
+  cameraSpeed: 2
 --- !u!1 &500583716
 GameObject:
   m_ObjectHideFlags: 0
@@ -6643,11 +6643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493920141574033135, guid: 3bfaaed6a54c2af4aa8450ea5cde51b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.65
+      value: 36.26
       objectReference: {fileID: 0}
     - target: {fileID: 493920141574033135, guid: 3bfaaed6a54c2af4aa8450ea5cde51b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.22
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 493920141574033135, guid: 3bfaaed6a54c2af4aa8450ea5cde51b9, type: 3}
       propertyPath: m_LocalPosition.z
