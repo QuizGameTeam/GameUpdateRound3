@@ -10,16 +10,15 @@
 ### Hướng dẫn và mô tả
 
 - Bản unity : 2021.3.18f1
+- Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Round3`
+- Cơ chế game : `Intro` -> `GamePlay` -> `Phishing` / `Privacy`
 
-- Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Intro` 
-
-- Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
-
-- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1rXNZoINJp-quim6oTlUo_gqAIqO_urCp) 
+- Chơi gameplay : floder tải hết tất cả trong floder [link sau](https://drive.google.com/drive/folders/1NiiqeDtWQ85AmHIQeHWbMkT4d3DX5R_E?usp=sharing)  -> chạy file `AntiHacker.exe` 
 
     ![Alt text](Report/gamelogo.png)
 
-- **Mô tả**: Người chơi đóng vai nhân vật trên hành trình tìm kiến tri thức cũng như theo đuổi các vấn đề liên quan đến bảo mật. Trên hành trình này người chơi phải trả lời câu hỏi sau mỗi lần chạm quái để nhận được chiến lợi phẩm.
+- **Mô tả**: Game 2D phiêu lưu với những thử thách khác nhau liên quan đến các vấn đề bảo mật. Đồng thời 
+
 ### Cách chơi 
 
 - Chọn Start để bắt đầu game
