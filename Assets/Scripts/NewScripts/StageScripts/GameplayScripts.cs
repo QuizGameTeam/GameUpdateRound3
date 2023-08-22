@@ -39,6 +39,8 @@ namespace UI{
 
         [SerializeField] private AudioSource src;
         [SerializeField] private AudioClip AudioPlay;
+        [SerializeField] private AudioClip wingame;
+        [SerializeField] private AudioClip losegame;
         
         private GameState vt_GameState;
         public void SetGameState(GameState state)
@@ -148,10 +150,12 @@ namespace UI{
         public void GameOver_State()
         {
             SetGameState(GameState.GameOver);
+            src.PlayOneShot(losegame);
         }
         public void GameWin_State()
         {
             SetGameState(GameState.GameWin);
+            src.PlayOneShot(wingame);
         }
         public void GoHome()
         {

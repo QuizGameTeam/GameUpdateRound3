@@ -8,7 +8,6 @@ using static UnityEngine.Random;
 using UnityEngine.SceneManagement;
 using UI;
 
-
 namespace UI
 {
     [Serializable]
@@ -38,12 +37,14 @@ namespace UI
         private int m_QuestionIndex;
         public bool click = false;
         public HeartCount Heart;
+        private GameplayScripts GameplayScripts;
 
         void Start()
         {
             click = false;
             m_QuestionIndex = 0;
             InitQuestion(0);
+            GameplayScripts = FindObjectOfType<GameplayScripts>();
         }
         private void InitQuestion(int pIndex)
         {
@@ -73,13 +74,13 @@ namespace UI
                 {
                     flag = true;
                     Debug.Log("Cau tra loi chinh xac");
-                    src.PlayOneShot(AC_ans);
+                    src.PlayOneShot(WA_ans);
                 }
                 else 
                 {
                     Debug.Log("Ngouuu");
                     Heart.TakeDamage(1);
-                    src.PlayOneShot(WA_ans);
+                    src.PlayOneShot(AC_ans);
                 }
                 // display correct ans
                 switch (ans)
@@ -113,17 +114,16 @@ namespace UI
                         m_ImgAnswerD.color = flag ? Color.green : Color.red;
                         break;
                 }
+                GameplayScripts.UnPause();
                 Invoke("Explain", 2f);
             }
         }
         public void Explain()
         {
+            GameplayScripts.Pause();
             game.Explain_StateAsk();
             click = false;
             InitQuestion(0);
         }
-
     }
-
-    
 }

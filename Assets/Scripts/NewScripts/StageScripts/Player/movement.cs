@@ -143,18 +143,18 @@ public class movement : MonoBehaviour
         // Reach endpoint
         if (collision.gameObject.name == "Endpoint")
         {
-            GameplayScripts.Sumbit_ans();
             GameplayScripts.Pause();
+            GameplayScripts.Sumbit_ans();
         }
         if (collision.gameObject.name == "Chall")
         {
-            GameplayScripts.Explain_StateChall();
             GameplayScripts.Pause();
+            GameplayScripts.Explain_StateChall();
         }
         if (collision.gameObject.tag == "ques")
         {
+            GameplayScripts.Pause();
             GameplayScripts.Ask_State();
-            //GameplayScripts.Pause();
         }
         
         

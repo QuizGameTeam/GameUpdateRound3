@@ -42,8 +42,9 @@ namespace UI
             currentHealth = currentHealth - damage;
             if (currentHealth <= 0)
             {
-                GameplayScripts.OverWithoutSumbit();
                 GameplayScripts.Pause();
+                GameplayScripts.OverWithoutSumbit();
+                
             }
         }
     }
