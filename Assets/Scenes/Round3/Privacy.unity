@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3694,7 +3694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nh\u1EA5n v\xE0o \u0111\xE2y n\xE8"
+  m_text: "B\u1EE9c \u1EA3nh \u1EDF \u0111\xE2y n\xE8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9760,7 +9760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322142485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.1, y: 7.3, z: 0}
+  m_LocalPosition: {x: 14.3, y: 8.9, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14677,7 +14677,7 @@ MonoBehaviour:
     trong m\u1ED9t t\u1EADp tin c\xF3 th\u1EC3 \u1EA9n nh\u1EEFng th\xF4ng tin kh\xE1c).
     V\xEC v\u1EADy, Moew \u0111\u01B0a ra \u0111i\u1EC1u ki\u1EC7n n\u1EBFu T\xE8o
     t\xECm \u0111\u01B0\u1EE3c th\xF4ng \u0111i\u1EC7p Moew \u0111\xE3 gi\u1EA5u
-    \u0111i, Moew s\u1EBD thi c\xF9ng T\xE8o."
+    \u0111i trong b\u1EE9c \u1EA3nh, Moew s\u1EBD thi c\xF9ng T\xE8o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16502,7 +16502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2108329099
 RectTransform:
   m_ObjectHideFlags: 0
