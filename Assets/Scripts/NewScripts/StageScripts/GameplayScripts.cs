@@ -129,6 +129,7 @@ namespace UI{
         public void OverWithoutSumbit()
         {
             SetGameState(GameState.Over_WithoutSumbit);
+            src.PlayOneShot(losegame);
         }
         // State-change function
         public void Explain_StateChall()
