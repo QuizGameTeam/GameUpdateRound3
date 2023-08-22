@@ -9111,8 +9111,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082781949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.513, y: 0.087, z: 0}
-  m_LocalScale: {x: 0.14036183, y: 0.21275222, z: 0.2}
+  m_LocalPosition: {x: -0.112, y: 0.272, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1749148402}
@@ -9259,6 +9259,7 @@ GameObject:
   - component: {fileID: 1089372619}
   - component: {fileID: 1089372618}
   - component: {fileID: 1089372617}
+  - component: {fileID: 1089372621}
   m_Layer: 0
   m_Name: GameGame
   m_TagString: Untagged
@@ -9355,6 +9356,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089372621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089372615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b3086ddf68c4e4c93ac6007c9e4e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 1089372619}
+  Input_Text: {fileID: 414762549}
 --- !u!4 &1093847504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8975138442710855008, guid: 82a3e6f21347a90469e169851c4e8b72, type: 3}
@@ -16202,8 +16217,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18097,11 +18112,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.14
+      value: 145.89
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.48
+      value: 3.37
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19919,11 +19934,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.13
+      value: 145.65
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.29
+      value: 10.66
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20043,8 +20058,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI.privacy, Assembly-CSharp
+      - m_Target: {fileID: 1206572407}
+        m_TargetAssemblyTypeName: UI.ReadInput, Assembly-CSharp
         m_MethodName: btnSumbit
         m_Mode: 1
         m_Arguments:

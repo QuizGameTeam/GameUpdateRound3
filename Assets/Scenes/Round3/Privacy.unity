@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2128,7 +2128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0fff4d484b7a24d96eebb3811448d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 
   game: {fileID: 1130603906}
   Input_Text: {fileID: 910044211}
 --- !u!4 &364775660 stripped
@@ -3769,11 +3768,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.26
+      value: 9.3
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.12
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 1123951556859221783, guid: 28ad0c9a3b4526f469c2c69999672a94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4620,7 +4619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733910897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 3.41, z: 0}
+  m_LocalPosition: {x: 1.02, y: 3.51, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5017,7 +5016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &786367818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6043,10 +6042,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ReadInput, Assembly-CSharp
-        m_MethodName: ReadStringInput
-        m_Mode: 0
+      - m_Target: {fileID: 1130603903}
+        m_TargetAssemblyTypeName: UI.privacy, Assembly-CSharp
+        m_MethodName: btnSumbit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6533,8 +6532,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7823,7 +7822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0fff4d484b7a24d96eebb3811448d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 
   game: {fileID: 1130603906}
   Input_Text: {fileID: 910044211}
 --- !u!114 &1130603904
@@ -15682,7 +15680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021812756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.37, y: -4.29, z: 0}
+  m_LocalPosition: {x: 5.43, y: -4.23, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -16539,7 +16537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2108329099
 RectTransform:
   m_ObjectHideFlags: 0
