@@ -26,4 +26,4 @@
 
 ### **12. Source code**
 
-[Link github](https://github.com/QuizGameTeam/QuizGame_SteamRound2/tree/main)
+[Link github](https://github.com/QuizGameTeam/GameUpdateRound3)
