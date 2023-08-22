@@ -8,14 +8,10 @@ namespace UI
 {
     public class ReadInput : MonoBehaviour
     {
-        public string input;
         public GameplayScripts game;
         public TMP_InputField Input_Text;
         string ans = "crypto{You_will_be_working_with_hex_strings_a_lot}";
-        //[SerializeField] public GameObject PlayerSubmit;
-
-
-        // Start is called before the first frame update
+        
         void Start()
         {
             Input_Text.text = "Enter text";
@@ -34,17 +30,21 @@ namespace UI
         }
         public void btnSumbit()
         {   
-            
-            Debug.Log(Input_Text.text);
-            Debug.Log(ans);
-            if (Input_Text.text == ans) 
-            {
-                game.GameWin_State();
-            }
+            if (Input_Text.text == "Enter text") game.OverWithoutSumbit();
             else 
             {
-                game.GameOver_State();
+                Debug.Log(Input_Text.text);
+                Debug.Log(ans);
+                if (Input_Text.text == ans) 
+                {
+                    game.GameWin_State();
+                }
+                else 
+                {
+                    game.GameOver_State();
+                }
             }
+            
         }   
     }
 

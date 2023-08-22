@@ -8,7 +8,6 @@ namespace UI
 {
     public class privacy : MonoBehaviour
     {
-        public string input;
         public GameplayScripts game;
         public TMP_InputField Input_Text;
         string ans = "flag{EEe_x_I_FFf}";

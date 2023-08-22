@@ -30,9 +30,9 @@ namespace UI
         {
             Application.OpenURL("https://docs.google.com/document/d/1BwTzjrXOj9j7vF1FdHaVXtoT3aFtrP3kcTf4Hzza7yQ/edit?usp=sharing");
         }
-        public void sol_chall()
+        public void chall_crypto()
         {
-            Application.OpenURL("https://exiftool.org/");
+            Application.OpenURL("https://docs.google.com/document/d/1o_QaXpHAaUlX_gkd6vBoyHGHXuKDTR5X5S4FNiYy1hA/edit?usp=sharing");
         }
         public void link_hint()
         {
