@@ -52,5 +52,5 @@
         "temp/":true,
         "Temp/":true
     },
-    "dotnet.defaultSolution": "QuizGame.sln"
+    "dotnet.defaultSolution": "GameUpdateRound3.sln"
 }
