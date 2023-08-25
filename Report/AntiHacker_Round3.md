@@ -28,7 +28,7 @@ Sàn phẩm hướng đến tất cả mọi người (hướng đến việc n�
 
 Tựa game mang đến trải nghiệm phiêu lưu, khám phá học hỏi qua hành trình nhân vật bao gồm các chức năng:
 
-- Trải nghiệm học tập: Phân loại các bài giảng(networking, phishing, privacy), Thuật toán so khớp chuỗi khi người chơi submit đáp án, chọn đáp án cho các câu hỏi quiz nhỏ, hiện thị các hint trên hành trình người chơi, mỗi lựa chọn đều mang những thử thách câu chuyện khac nhau.
+- Trải nghiệm học tập: Phân loại các bài giảng giữa tấn công và phòng vệ(networking, phishing, privacy), Thuật toán so khớp chuỗi khi người chơi submit đáp án, chọn đáp án cho các câu hỏi quiz nhỏ, hiện thị các hint trên hành trình người chơi, mỗi lựa chọn đều mang những thử thách câu chuyện khac nhau.
 
 - Trải nghiệm giải trí: Âm nhạc và giao diện có yếu tố tương quan đến nhau, chọn nhân vật theo tính năng khác nhau, điều khiển nhân vật, di chuyển (có gia tốc trọng trường cố định), dừng màn hình khi chơi.
 ### **6. Business Model**
@@ -53,12 +53,11 @@ Những nền tảng giải mật mã hay nâng cao ý thức người dùng v�
 - Tạo ra biểu tượng ấn tượng cho game (đã hoàn thành). Biểu tượng là thứ đầu tiên thu hút sự chú ý của người dùng.
 - Đăng thông tin về game lên các nền tảng mạng xã hội , các nhóm về game, an ninh mạng. Khuyến khích người dùng để lại nhận xét, góp ý hoặc chia sẻ game với bạn bè của họ.
 
-- Sử dụng các kênh truyền thông xã hội, như Facebook , để tạo ra một cộng đồng người chơi game. Tạo ra một fanpage, group hoặc hashtag cho game của bạn, nơi nhóm em có thể đăng những thông tin mới nhất, thú vị nhất về game, như các tính năng, sự kiện, cập nhật hay khuyến mãi. Đồng thời tương tác với người dùng, trả lời các câu hỏi, thắc mắc hoặc phản hồi của họ. Bạn cũng có thể tổ chức các cuộc thi, giveaway hoặc livestream để thu hút và giữ chân người chơi.
+- Sử dụng các kênh truyền thông xã hội, như Facebook , để tạo ra một cộng đồng người chơi game. Tạo ra một fanpage, group hoặc hashtag cho game , nơi nhóm em có thể đăng những thông tin mới nhất, thú vị nhất về game, như các tính năng, sự kiện, cập nhật hay khuyến mãi. Đồng thời tương tác với người dùng, trả lời các câu hỏi, thắc mắc hoặc phản hồi của họ. Tổ chức các cuộc thi, giveaway hoặc livestream để thu hút người chơi.
 
 - Đăng sản phẩm lên các cửa hàng ứng dụng ngoài Google Play, Steam.
 
-- Tạo ra các gói cao cấp kích thích người chơi . Bạn có thể thiết kế các gói cao cấp cho game của bạn, như VIP, Premium hoặc Elite. Những gói này sẽ mang lại cho người chơi nhiều lợi ích hơn, như truy cập vào các tính năng đặc biệt, nhận được nhiều vật phẩm quý hiếm hoặc ưu đãi hơn.
-
+- Tạo ra các gói cao cấp kích thích người chơi . Thiết kế các gói cao cấp cho game của như VIP, Premium hoặc Elite. Những gói này sẽ mang lại cho người chơi nhiều lợi ích hơn, như truy cập vào các tính năng đặc biệt, nhận được nhiều vật phẩm quý hiếm hoặc ưu đãi hơn.
 
 ### **9. Milestones and Future Plans**
 Nhóm em đã demo được gamne với 4 bài học và những quiz nhỏ liên quan. Đồng thời thiết kế hai thử thách privacy và phishing. Phát hành ra trailer game.

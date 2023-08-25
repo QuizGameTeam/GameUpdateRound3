@@ -9,12 +9,15 @@
 - Trong cửa số project chọn `Intro` -> Ấn nút `Play` để test game
 - Source code được quản lý trong floder `Scripts` -> `NewScripts`. 
 
-    - Mỗi sence tương ứng với mỗi scripts (chính) 
+    - Mỗi sence tương ứng với mỗi scripts (chính)
+        - Sence `Intro` -> `IntroScripts`
+        - Sence `Gameplay` ->  `GameplayScripts`
+        - Sence `Phishing` và `Privacy` -> `StageSrcipts` 
     - Ngoài ra có srcipts(phụ) sẽ được gắn tương ứng với các object cần thiết.
     - Mở `Inspector` để quan sát chi tiết hơn ạ.
 
 - Cơ chế game : `Intro` -> `GamePlay` -> `Phishing` / `Privacy`
-- Setup giao diện màn hình `1920 x 1080` -> Ấn n
+- Setup giao diện màn hình `1920 x 1080`
 
 - Chơi gameplay : floder tải hết tất cả trong floder [link sau](https://drive.google.com/drive/folders/1teIRrwk8wZjxbR8ykCw3xURe3ctVrQ9i?usp=drive_link)  -> chạy file `AntiHacker.exe` 
 
