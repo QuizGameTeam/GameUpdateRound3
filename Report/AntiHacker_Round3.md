@@ -2,7 +2,7 @@
 
 ### **1. Introduction**
 
-Bảo mật thông tin và dữ liệu đóng vai trò quan trọng trong thời đại công nghiệp hóa hiện đại hóa như hiện nay. `AntiHacker` là tựa game giáo dục giúp người chơi nâng cao ý thức về các vấn đề liên quan đến bảo mật qua những hành trình phiêu lưu nhập vai. Tựa game mong muốn thể hiện được trọn vẹn hai yếu tố giải trí 
+Bảo mật thông tin và dữ liệu đóng vai trò quan trọng trong thời đại công nghiệp hóa hiện đại hóa như hiện nay. `AntiHacker` là tựa game giáo dục giúp người chơi nâng cao ý thức về các vấn đề liên quan đến bảo mật qua những hành trình phiêu lưu nhập vai. Tựa game mong muốn thể hiện được trọn vẹn hai yếu tố kiến thức và giải trí. 
 Sản phẩm hướng tới cộng đồng mong muốn người chơi sẽ khám phá học hỏi các tình huống khác nhau liên quan đến các mối đe dọa phổ biến trên Internet, chẳng hạn như lừa đảo, đánh cắp danh tính. Ngoài ra, người chơi sẽ khám phá thêm về các kỹ thuật giấu tin, cách giải mã hóa. Từ đó hiểu được cách hacker tiếp cận các lỗ hỏng thông tin. Đồng thời bản thân phải cẩn thận với các đường link không uy tín, bảo vệ thông tin của mình. 
 
 Yếu tố team em hướng đến: kiến thức song hành giải trí đồng thời tích hợp tập trung chuyên môn về vấn đề bảo mật.
@@ -16,7 +16,7 @@ Người dùng có thể bị mất dữ liệu quan trọng, nhạy cảm hoặ
 
 ### **3. Solution**
 
-Sản phẩm nhóm em được thể hiện qua hình thức là một tựa game story telling giải trí phiêu lưu 2D. Người chơi có thể vừa chơi vừa học offline linh hoạt.
+Sản phẩm nhóm em được thể hiện qua hình thức là một tựa game story telling giải trí phiêu lưu 2D. Người chơi có thể vừa chơi vừa học linh hoạt.
 
 Với những vấn đề bảo mật liên quan, nhóm em sẽ cung cấp kiến thức cho người chơi ở phần `Learn` kèm cái `quiz` nhỏ về phishing, privacy để người chơi thực hành. Đặc biệt ở mỗi thử thách nhóm em đều cố gắng truyền tải một câu chuyện, thông điệp hướng giải khác nhau. Đồng thời mô phỏng cuộc tấn công, cuộc điều tra. 
 ### **4. Market**
@@ -70,3 +70,6 @@ Sản phẩm của nhóm là một tựa game giáo dục giúp người chơi n
 ### **12. Source code**
 
 [Link github](https://github.com/QuizGameTeam/GameUpdateRound3)
+
+
+Key partner:  
